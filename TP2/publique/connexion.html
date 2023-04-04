@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IFT 1147 - TP1</title>
+
+    <script src="utilitaires/jquery-3.6.0.min.js"></script>
+    <script src="utilitaires/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="utilitaires/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="utilitaires/bootstrap.css.map">
+    <link rel="stylesheet" type="text/css" href="utilitaires/signin.css">
+
+    <!-- Custom styles for this template -->
+    <link href="utilitaires/signin.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="text-center">
+
+    <main class="form-signin">
+      <form action="../serveur/membres/connexionMembre.php" method="POST">
+        <img class="mb-4" src="img/logo.png" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Accès à la page des membres</h1>
+
+        <div class="form-floating">
+          <input type="email" class="form-control" id="courriel" name="courriel" placeholder="nom@example.com" required />
+          <label for="courriel">Courriel</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="motpasse" name="motpasse" placeholder="Mot de passe" required />
+          <label for="motpasse">Mot de Passe</label>
+        </div>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Se souvenir de moi
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Connexion</button> <br>
+        <br><a href="../publique/inscription.html" class="w-100 btn btn-lg btn-secondary">Devenir Membre</a>
+
+      </form>
+    </main>
+
+  </body>
+
+</html>

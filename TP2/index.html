@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="Non disponibleport" content="width=device-width, initial-scale=1">
+
+      <title>IFT 1147 - TP1</title>
+
+      <script src="publique/utilitaires/jquery-3.6.0.min.js"></script>
+      <script src="publique/utilitaires/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="publique/utilitaires/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="publique/utilitaires/bootstrap.css.map">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+     <!-- <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">En contrsuction</h4>
+              <p class="text-muted">En construction</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">En construction</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">En construction</a></li>
+                <li><a href="#" class="text-white">En construction</a></li>
+                <li><a href="#" class="text-white">En construction</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>--> 
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img src="publique/img/logo.png" alt="Logo">
+            <strong>Service de diffusion des films</strong>
+          </a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <p>
+              <a href="publique/connexion.html" class="btn btn-primary my-2">Connexion</a>
+              <a href="publique/inscription.html" class="btn btn-secondary my-2">Devenir Membre</a>
+            </p>
+            <!--<h2 class="fw-light">Aperçu du Catalogue :</h2>
+             <p class="lead text-muted"></p>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+
+
+            <div class="col">
+              <div class="card shadow-sm">
+
+                <img src="publique/img/film0.jpg" alt="Evil Dead">
+
+                <div class="card-body">
+                  <p class="card-text"> Evil Dead </p>
+                  <p> 26/05/1983</p>
+                  <p> Horreur </p>
+                  <p> Sam Raimi</p>
+                  <p>$ 4.99</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                    </div>
+                    <small class="text-muted"> 1h 20m</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="col">
+              <div class="card shadow-sm">
+
+                <img src="publique/img/film1.jpg" alt="Centipede">
+
+                <div class="card-body">
+
+                  <p class="card-text"> The Human Centipede </p>
+                  <p> 28/08/2010</p>
+                  <p> Fantasie </p>
+                  <p> Tom Six</p>
+                  <p>$ 4.99</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                    </div>
+                    <small class="text-muted">1h 32m</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+
+                <img src="publique/img/film2.jpg" alt="Jeu">
+
+                <div class="card-body">
+
+                  <p class="card-text"> Jeu d'enfant e </p>
+                  <p> 8/11/1988 </p>
+                  <p> Horreur </p>
+                  <p> Tom Holland</p>
+                  <p>$ 4.99</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                    </div>
+                    <small class="text-muted">1h 27m</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+
+                <img src="publique/img/film3.jpg" alt="Jeu">
+
+                <div class="card-body">
+                  <p class="card-text"> Simetierre </p>
+                  <p> 21/04/1989</p>
+                  <p> Horreur </p>
+                  <p> Stephen Kinga</p>
+                  <p>$ 4.99</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">you!</button>
+                    </div>
+                    <small class="text-muted">1h 47m</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="publique/img/film4.jpg" alt="Skins">
+
+                <div class="card-body">
+                  <p class="card-text"> Skins </p>
+                  <p> 03/10/2017</p>
+                  <p> Drame </p>
+                  <p> Eduardo Casanova</p>
+                  <p>$ 4.99</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                    </div>
+                    <small class="text-muted">1h 31m</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="publique/img/film5.jpg" alt="Skins">
+
+                <div class="card-body">
+                  <p class="card-text"> Saw </p>
+                  <p> 29/10/2004</p>
+                  <p> Crime </p>
+                  <p> James Wan</p>
+                  <p>$ 4.99</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Non disponible</button>
+                    </div>
+                    <small class="text-muted">1h 44m</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+  
+    </main>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Aller vers le haut</a>
+        </p>
+        <p class="mb-1"> </p> -->
+
+      </div>
+    </footer>
+  </body>
+</html>
